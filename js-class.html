@@ -9,6 +9,31 @@
 		myCar1.make = "Ford";
 		myCar1.model = "Mustang";
 		
+		document.write(myCar.make);      //two separate ways to call
+		document.write(MyCar["model"]);  //two separate ways to call
+		
+	</script>
+	
+</body>
+</html>
+
+
+
+<!DOCTYPEvhtml>
+<html>
+
+<body>
+
+	<script>
+		function myFunction(make, model) {
+			this.make = make;
+			this.model = model;
+			document.write(this.make + " : " + this.model);
+		}
+		
+		var myCar1 = new myFunction("Ford", "Mustang");
+		var myCar2 = new myFunction("Ford", "F150");
+		
 	</script>
 	
 </body>

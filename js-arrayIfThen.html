@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		button{font-size:1.5em:font-weight:bold:height:75px:width:100px:}
+	</style>
+</head>
+
+
+<body>
+
+<p id="demo" onclick="myFunction()">Click me to change my text color.</p>
+
+<script>
+function myFunction() {
+    console.log.getElementById("countdown").style.color = "red";
+	//document.getElementbyId("demo").innerHTML = "this is working";
+}
+</script>
+
+
+	<h1 id="countdown" onclick="myFunction()">Click button for colors!</h1>
+	<br><br>
+	<button class="btn" onclick="up()">Start</button>
+	
+	<script>
+		var i=0;
+		var countArray = [10,9,8,7,6,5,4,3,2,1,"Happy New Year!"];
+		
+		function up() {
+			document.getElementbyId("countdown").style.color = "red";
+			/*document.getElementbyId("countdown").innerHTML = i;
+			if(i < countArray.length) {
+				document.getElementbyId("countdown").style.color = "red";
+				document.getElementbyId("countdown").innerHTML = countArray[i];
+				i++;
+			}*/
+			window.setTimeout(up, 250);
+		};
+		
+	</script>
+	
+</body>
+</html>

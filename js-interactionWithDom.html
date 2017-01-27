@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+	<h1 id="text"></h1>
+	
+	<script>
+	
+		//document.getElementById()
+		//document.getElementsByClassName()
+		//document.getElementsByName()
+		//document.getElementsByTagName()
+		
+		
+		var text = document.getElementById("text");
+		text.innerHTML = "Text is entered here!";
+		
+	</script>
+	
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+
+	<p class="uniqueName">Enter Text</p>
+	<p class="uniqueName">Other Text</p>
+	<p class="uniqueName">Alternate Text</p>
+	<p class="uniqueName">More Text</p>
+	<p class="uniqueName">Finished Text</p>
+	
+	<script>
+	
+		//document.getElementById()
+		//document.getElementsByClassName()
+		//document.getElementsByName()
+		//document.getElementsByTagName()
+		
+		
+		var chooseVarName = document.getElementByCassName("uniqueName");
+		chooseVarName[2].style.color = "red";
+		
+	</script>
+	
+</body>
+</html>
